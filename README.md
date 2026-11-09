@@ -6,4 +6,4 @@ Download the render.c file and compile with whatever compiler you want. Nothing 
 # Use
 (assuming the executable is at ./render)
  ./render width height (then for each pixel from left to right, top to bottom, provide an ANSI color code then the charactor/text)
-EX: ./render 2 2 31 A 34 B 35 C 36 D
+ EX: ./render 2 2 31 A 34 B 35 C 36 D
