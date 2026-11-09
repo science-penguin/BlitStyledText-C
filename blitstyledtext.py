@@ -4,7 +4,7 @@ def blitstyledtext_internal_blit(pixelmap):
     if(blitstyledtext_executable_location == ""):
         return 0
     else:
-        input_str = blitstyledtext_executable_location
+        input_str = f"{blitstyledtext_executable_location}{len(pixelmap)}{len(pixelmap[0])}"
         for item0 in pixelmap:
             for item1 in pixelmap[item1]:
                 input_str += f" {pixelmap[item0][item1]}"
