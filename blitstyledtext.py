@@ -1,14 +1,16 @@
 from os import system as blitstyledtext_system
 blitstyledtext_executable_location = ""
 def blitstyledtext_internal_blit(pixelmap):
+    global blitstyledtext_executable_location
     if(blitstyledtext_executable_location == ""):
         return 0
     else:
-        input_str = f"{blitstyledtext_executable_location}{str(len(pixelmap))}{str(len(pixelmap[0]))}"
+        input_str = f"{blitstyledtext_executable_location} {str(len(pixelmap))} {str(len(pixelmap[0]))}"
         for item0 in pixelmap:
-            for item1 in pixelmap[item1]:
+            for item1 in pixelmap[item0]:
                 input_str += f" {pixelmap[item0][item1]}"
-        print(input_str)
+        blitstyledtext_system(input_str)
 def init(executable_location):
+    global blitstyledtext_executable_location
     blitstyledtext_executable_location = executable_location
     return blitstyledtext_internal_blit
