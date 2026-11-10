@@ -12,14 +12,21 @@ I wrote a basic Python library for invoking this rendering engine. It's nothing 
 How to use:  
   
 from blitstyledtext import init  
-\#initalize  
+  
+\#initalize
 blit = init(\"/path/to/render\")  
 \#use a 2-dimensional array with a list of rows, with each item going left to right, containing a list with an ANSI color code and text  
-\"\"\"  
+  
+\"\"\"
+  
 this renders like this  
+  
 \[  
 \[ANSI COLOR CODE, STRING\], \[ANSI COLOR CODE, STRING\]  
 \[ANSI COLOR CODE, STRING\], \[ANSI COLOR CODE, STRING\]  
-\]  
-\"\"\"  
+\]
+  
+\"\"\"
+  
+  
 display(\[\[\["31","A"], \["34", "B"]], \[\["35","C"], \["36", "D"]]])
