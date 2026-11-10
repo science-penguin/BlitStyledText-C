@@ -8,7 +8,8 @@ def blitstyledtext_internal_blit(pixelmap):
         input_str = f"{blitstyledtext_executable_location} {str(len(pixelmap))} {str(len(pixelmap[0]))}"
         for item0 in pixelmap:
             for item1 in item0:
-                input_str += f" {pixelmap[item0][item1]}"
+                for item2 in item1:
+                    input_str += f" {item2}"
         blitstyledtext_system(input_str)
 def init(executable_location):
     global blitstyledtext_executable_location
