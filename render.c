@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
         int height = atoi(argv[1]);
         int width = atoi(argv[2]);
         if(argc != height * width * 2 + 3) {
-                printf("you did not provide enough arguments for the width and height provided");
+                printf("you did not provide enough arguments for the width and height provided\n");
                 return 1;
         }
         printf("\e[1;1H\e[2J");
